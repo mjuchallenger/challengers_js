@@ -1,0 +1,98 @@
+[debug] [2022-11-04T07:42:01.098Z] ----------------------------------------------------------------------
+[debug] [2022-11-04T07:42:01.099Z] Command:       /usr/local/bin/node /Users/choitim/.npm-global/bin/firebase init
+[debug] [2022-11-04T07:42:01.099Z] CLI Version:   11.16.0
+[debug] [2022-11-04T07:42:01.099Z] Platform:      darwin
+[debug] [2022-11-04T07:42:01.099Z] Node Version:  v16.17.0
+[debug] [2022-11-04T07:42:01.100Z] Time:          Fri Nov 04 2022 16:42:01 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-04T07:42:01.100Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-04T07:42:01.101Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-04T07:42:01.137Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-04T07:42:01.138Z] > authorizing via signed-in user (timchoi931@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/choitim/Desktop/challengers web
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-11-04T07:42:01.535Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-11-04T07:42:01.535Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-04T07:43:18.361Z] Using project from CLI flag: mjuchallengers-cdcf0
+[debug] [2022-11-04T07:43:18.361Z] > refreshing access token with scopes: []
+[debug] [2022-11-04T07:43:18.362Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-04T07:43:18.362Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-04T07:43:18.729Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-11-04T07:43:18.730Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-04T07:43:18.775Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mjuchallengers-cdcf0 [none]
+[debug] [2022-11-04T07:43:19.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mjuchallengers-cdcf0 200
+[debug] [2022-11-04T07:43:19.250Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mjuchallengers-cdcf0 {"projectId":"mjuchallengers-cdcf0","projectNumber":"269368480951","displayName":"mjuchallengers","name":"projects/mjuchallengers-cdcf0","resources":{"hostingSite":"mjuchallengers-cdcf0","realtimeDatabaseInstance":"mjuchallengers-cdcf0-default-rtdb","storageBucket":"mjuchallengers-cdcf0.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE","etag":"1_edd594d0-b25a-4044-ae0f-b2fdd6ecde05"}
+[info] i  Using project mjuchallengers-cdcf0 (mjuchallengers) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /Users/choitim/Desktop/challengers web 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=724626247&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-11-04T07:43:25.983Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-11-04T07:43:25.985Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-11-04T07:43:26.451Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-11-04T07:43:26.451Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-11-04T07:43:26.466Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-11-04T07:43:26.940Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-11-04T07:43:26.941Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Choitim","id":75467180,"node_id":"MDQ6VXNlcjc1NDY3MTgw","avatar_url":"https://avatars.githubusercontent.com/u/75467180?v=4","gravatar_id":"","url":"https://api.github.com/users/Choitim","html_url":"https://github.com/Choitim","followers_url":"https://api.github.com/users/Choitim/followers","following_url":"https://api.github.com/users/Choitim/following{/other_user}","gists_url":"https://api.github.com/users/Choitim/gists{/gist_id}","starred_url":"https://api.github.com/users/Choitim/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Choitim/subscriptions","organizations_url":"https://api.github.com/users/Choitim/orgs","repos_url":"https://api.github.com/users/Choitim/repos","events_url":"https://api.github.com/users/Choitim/events{/privacy}","received_events_url":"https://api.github.com/users/Choitim/received_events","type":"User","site_admin":false,"name":"dev.choi28","company":null,"blog":"https://velog.io/@timchoi931","location":null,"email":null,"hireable":null,"bio":"Hi, \r\nI am a student who is preparing to be a developer.\r\nI didn't decide what type of developer yet.","twitter_username":null,"public_repos":5,"public_gists":0,"followers":14,"following":12,"created_at":"2020-12-04T05:51:57Z","updated_at":"2022-11-04T07:43:25Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":101616,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Choitim 
+[info] 
+[debug] [2022-11-04T07:43:38.378Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:38.738Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:38.739Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:43:39.932Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:40.228Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:40.228Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:43:41.119Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:41.408Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:41.409Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:43:41.669Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:41.844Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:42.005Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:42.045Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:42.046Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:43:42.104Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:42.105Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:43:42.342Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:42.343Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:43:55.742Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:43:56.062Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-11-04T07:43:56.063Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:44:11.262Z] >>> [apiv2][query] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:44:11.618Z] <<< [apiv2][status] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key 404
+[debug] [2022-11-04T07:44:11.619Z] <<< [apiv2][body] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:44:12.058Z] >>> [apiv2][query] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:44:12.218Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:44:12.314Z] <<< [apiv2][status] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key 404
+[debug] [2022-11-04T07:44:12.315Z] <<< [apiv2][body] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:44:12.375Z] >>> [apiv2][query] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key type=owner
+[debug] [2022-11-04T07:44:12.477Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-11-04T07:44:12.477Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-11-04T07:44:12.709Z] <<< [apiv2][status] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key 404
+[debug] [2022-11-04T07:44:12.709Z] <<< [apiv2][body] GET https://api.github.com/repos/firebase projects:lists/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
